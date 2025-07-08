@@ -78,23 +78,23 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'real_db',  # Replace with your database name
-            'USER': 'root',                # Default XAMPP MySQL user
-            'PASSWORD': '',                # Default XAMPP MySQL password (often empty)
-            'HOST': 'localhost',          # Or 'localhost'
-            'PORT': '3306',                # Default MySQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': 'real_db',  # Replace with your database name
+#             'USER': 'root',                # Default XAMPP MySQL user
+#             'PASSWORD': '',                # Default XAMPP MySQL password (often empty)
+#             'HOST': 'localhost',          # Or 'localhost'
+#             'PORT': '3306',                # Default MySQL port
+#     }
+# }
 
 
 # Password validation
