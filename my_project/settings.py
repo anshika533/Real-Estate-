@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-bj7pvomj*pqk0!1rg8%2&9wq5-_s6y+m)7^p#qv9uz(i8jw@%#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://real-estate-okhd.onrender.com']
 
 
 
@@ -91,7 +91,7 @@ DATABASES = {
             'NAME': 'real_db',  # Replace with your database name
             'USER': 'root',                # Default XAMPP MySQL user
             'PASSWORD': '',                # Default XAMPP MySQL password (often empty)
-            'HOST': 'https://real-estate-okhd.onrender.com',           # Or 'localhost'
+            'HOST': 'localhost',          # Or 'localhost'
             'PORT': '3306',                # Default MySQL port
     }
 }
