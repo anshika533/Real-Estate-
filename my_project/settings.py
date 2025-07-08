@@ -91,7 +91,7 @@ DATABASES = {
             'NAME': 'real_db',  # Replace with your database name
             'USER': 'root',                # Default XAMPP MySQL user
             'PASSWORD': '',                # Default XAMPP MySQL password (often empty)
-            'HOST': 'localhost',           # Or 'localhost'
+            'HOST': 'https://real-estate-okhd.onrender.com',           # Or 'localhost'
             'PORT': '3306',                # Default MySQL port
     }
 }
