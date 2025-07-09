@@ -47,7 +47,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'my_app.context_processors.location_dropdown',
+                'my_app.context_processors.all_cities',
             ],
         },
     },
