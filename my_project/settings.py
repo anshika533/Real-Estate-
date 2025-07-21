@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'my_app',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -110,3 +111,7 @@ FAST2SMS_API_KEY = os.getenv('CZ36GVJh8hUFyAFkt1UZ0QHYfonz4fqkP1cb1He1Uh8apRyYP1
 
 LOGIN_URL = '/user-login/'
 LOGIN_REDIRECT_URL = '/'  # or 'home' if you want to redirect after login
+
+
+X_FRAME_OPTIONS = 'ALLOWALL'
+
