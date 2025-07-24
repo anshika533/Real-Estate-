@@ -6,6 +6,7 @@ import dj_database_url
 import os
 from pathlib import Path
 from dotenv import load_dotenv 
+from decouple import config
 
 load_dotenv()  
 
@@ -27,6 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_app',
     'widget_tweaks',
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +126,12 @@ LOGIN_REDIRECT_URL = '/'  # or 'home' if you want to redirect after login
 
 X_FRAME_OPTIONS = 'ALLOWALL'
 
+
+
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': config('CLOUDINARY_API_KEY'),
+    'API_SECRET': config('CLOUDINARY_API_SECRET')
+}
