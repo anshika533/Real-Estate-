@@ -131,7 +131,7 @@ X_FRAME_OPTIONS = 'ALLOWALL'
 import cloudinary
 import cloudinary_storage
 import os
-from decouple import config  # Agar aap decouple use kar rahe ho
+from decouple import config 
 
 
 
