@@ -72,7 +72,9 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv("DATABASE_URL")
+        default=os.getenv("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True
     )
 }
 
@@ -125,16 +127,7 @@ LOGIN_REDIRECT_URL = '/'  # or 'home' if you want to redirect after login
 
 
 X_FRAME_OPTIONS = 'ALLOWALL'
-
-
-
-import cloudinary
-import cloudinary_storage
-import os
-from decouple import config 
-
-
-
+# cloudinary
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
@@ -144,8 +137,8 @@ CLOUDINARY_STORAGE = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.zoho.in'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'chauhananshika533@gmail.com'
-EMAIL_HOST_PASSWORD = 'hmnk vqbm vvfk kegj'  # App password (not Gmail login password)
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD') # App password (not Gmail login password)
