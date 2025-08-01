@@ -127,6 +127,7 @@ LOGIN_REDIRECT_URL = '/'  # or 'home' if you want to redirect after login
 
 
 X_FRAME_OPTIONS = 'ALLOWALL'
+
 # cloudinary
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
