@@ -1,4 +1,4 @@
-#!/root/Real_Estate-/testvenv311/bin/python3.11
+#!/var/www/Real_Estate-/testvenv311/bin/python3.11
 import sys
 from gunicorn.app.wsgiapp import run
 if __name__ == '__main__':
